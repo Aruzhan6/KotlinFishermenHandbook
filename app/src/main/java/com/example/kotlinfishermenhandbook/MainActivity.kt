@@ -3,6 +3,7 @@ package com.example.kotlinfishermenhandbook
 import android.content.res.TypedArray
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.TextUtils
 import android.view.MenuItem
 import android.widget.LinearLayout
 import android.widget.Toast

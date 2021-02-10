@@ -1,6 +1,7 @@
 package com.example.kotlinfishermenhandbook
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -30,6 +31,12 @@ class MyAdapter (lisrArray: ArrayList<ListItem>,context: Context): RecyclerView.
             itemView.setOnClickListener(){
                 Toast.makeText(context, "Presed : ${tvTitle.text}", Toast.LENGTH_SHORT)
                     .show()
+                val i = Intent(context,ContentActivity::class.java).apply {
+                    putExtra("title", tvTitle.text.toString())
+                    putExtra("content", tvContent.text.toString())
+                    putExtra("image", listItem.image_id)
+                }
+                context.startActivity(i)
             }
 
         }
