@@ -7,6 +7,7 @@ import android.text.TextUtils
 import android.view.MenuItem
 import android.widget.LinearLayout
 import android.widget.Toast
+import androidx.core.view.GravityCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.activity_main.*
@@ -23,8 +24,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
 
         var list = ArrayList<ListItem>()
-
-
 
 
         list.addAll(fillArrays(resources.getStringArray(R.array.fish),
@@ -67,8 +66,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     }
 
+        drawerL.closeDrawer(GravityCompat.START)
      return true
     }
+
+
 
     fun fillArrays(titleArray:Array<String>, contentArray: Array<String>,imageArray:IntArray):List<ListItem>
     {

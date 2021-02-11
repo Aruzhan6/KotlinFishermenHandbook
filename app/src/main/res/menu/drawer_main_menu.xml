@@ -7,19 +7,37 @@
 
        <item android:title="@string/fish"
            android:id="@+id/id_fish"
-           android:icon="@drawable/ic_fish"/>
+           android:icon="@android:drawable/ic_search_category_default"/>
 
         <item android:title="@string/na"
            android:id="@+id/id_na"
-           android:icon="@drawable/ic_na"/>
+            android:icon="@android:drawable/ic_search_category_default"/>
 
         <item android:title="@string/sna"
            android:id="@+id/id_sna"
-           android:icon="@drawable/ic_sna"/>
+            android:icon="@android:drawable/ic_search_category_default"/>
 
         <item android:title="@string/history"
            android:id="@+id/id_history"
-           android:icon="@drawable/ic_history"/>
+            android:icon="@android:drawable/ic_search_category_default"/>
 
     </group>
+
+    <item android:title="@string/group">
+        <menu>
+            <item android:title="@string/renewal"
+                android:id="@+id/renewal"
+                android:icon="@android:drawable/ic_menu_rotate"/>
+
+            <item android:title="@string/proga"
+                android:id="@+id/id_proga"
+                android:icon="@android:drawable/ic_menu_view" />
+
+            <item android:title="@string/customization"
+                android:id="@+id/id_customization"
+                android:icon="@android:drawable/ic_menu_manage"/>
+
+
+        </menu>
+    </item>
 </menu>

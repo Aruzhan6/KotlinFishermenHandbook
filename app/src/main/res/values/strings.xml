@@ -4,5 +4,9 @@
     <string name="na">Наживки</string>
     <string name="sna">Снасти</string>
     <string name="history">Истории</string>
+    <string name="group">Другое</string>
+    <string name="renewal">Обновление</string>
+    <string name="proga">О программе</string>
+    <string name="customization">Настройки</string>
 
 </resources>
